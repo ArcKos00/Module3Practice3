@@ -17,4 +17,4 @@ message.WindowClose += (State state) =>
 };
 
 message.Open();
-Task.WaitAll(tss.Task);
+await Task.WhenAll(tss.Task);
